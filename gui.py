@@ -79,7 +79,7 @@ def graphical_part():
             show_classify_button(file_path)
 
         except:
-            pass
+            raise Exception("Image is not uploaded.")
 
 
     upload = Button(top, text="Upload an image", command=upload_image, padx=10, pady=5)
